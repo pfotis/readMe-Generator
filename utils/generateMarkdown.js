@@ -8,7 +8,7 @@ const licenseLinksArray = [
 ];
 
 const licenseBadgeArray = [
-  "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]",
+  "https://img.shields.io/badge/License-MIT-yellow.svg",
   "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)]",
   "[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]",
   "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]",
@@ -84,7 +84,7 @@ const generateMarkdown = (data) => {
   
   return `# ${data.title}
 
-      ${renderLicenseBadge(data.license[0])}
+      <img src=${renderLicenseBadge(data.license[0])}, alt= "badge">
 
       link to repository : https://github.com/pfotis/readMe-Generator
 

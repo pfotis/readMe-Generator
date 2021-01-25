@@ -62,16 +62,18 @@ const question =[
   },
 ];
 
-
-const promptUser = (Q) => {
-  return inquirer.prompt(Q)
+// the following function print the question to commande line
+const promptUser = (question) => {
+  return inquirer.prompt(question)
 }
 
+// this function save in the file the data the user type
 const writeToFile = (fileName, data) => {
   return fs.writeFileSync(fileName, data);
 }
 
-
+// this is function call all the function exist in the index.js and generateMarkdown.js direct or throw 
+// another function 
 const init = async () => {
   try {
     const answers = await promptUser(question);

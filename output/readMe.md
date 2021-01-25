@@ -1,12 +1,12 @@
-# readme generator
+# project
 
-      [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
+      <img src=https://img.shields.io/badge/License-MIT-yellow.svg, alt= "badge">
 
       link to repository : https://github.com/pfotis/readMe-Generator
 
       ## Description
 
-      this is assigment for the bootcamp in monash university
+      weef
 
       ## Table of Contents
 
@@ -21,12 +21,12 @@
 
     To install dependencies, run the following:
 
-    npm install inquirer
+    nothinig
 
     
     ## Usage
 
-    this repository help the user to create a professional repository for his project.
+    
 
     ## License
 
@@ -35,7 +35,7 @@
 
     ## Contributing
 
-    as soon as the user read the read me file could be able to understand the code
+    
 
     ## Tests
 
@@ -45,6 +45,6 @@
 
     ## Questions
 
-    Questions about this repository? Please contact me at pfotis@gmail.com(mailto:pfotis@gmail.com).
-    View my work in GitHub pfotis(https://github.com/pfotis).
+    Questions about this repository? Please contact me at paofits(mailto:paofits).
+    View my work in GitHub padsswdf(https://github.com/padsswdf).
   
