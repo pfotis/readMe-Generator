@@ -8,12 +8,12 @@ const licenseLinksArray = [
 ];
 
 const licenseBadgeArray = [
-  "https://img.shields.io/badge/License-MIT-yellow.svg",
-  "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)]",
-  "[![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]",
-  "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]",
-  "[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)]",
-  "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)]"
+  "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)",
+  "![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)",
+  "![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)",
+  "![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)",
+  "![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)",
+  "![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)"
 ];
 
 // the following function that returns a license badge based or empty string 
@@ -84,7 +84,7 @@ const generateMarkdown = (data) => {
   
   return `# ${data.title}
 
-      <img src=${renderLicenseBadge(data.license[0])}, alt= "badge">
+      ${renderLicenseBadge(data.license[0])}
 
       link to repository : https://github.com/pfotis/readMe-Generator
 
