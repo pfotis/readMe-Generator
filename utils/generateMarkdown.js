@@ -39,7 +39,8 @@ const renderLicenseBadge = (license) => {
     case 'Mozilla Public License 2.0':
       empty = licenseBadgeArray[5];
       break;
-    
+    default:
+      empty = " ";
   }
   return empty;
 }
@@ -47,7 +48,30 @@ const renderLicenseBadge = (license) => {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 const renderLicenseLink = (license) => {
-
+  let empty = "";
+  switch(license) {
+    case 'MIT':
+      empty = licenseLinksArray[0];
+      break;
+    case 'Unlicense':
+      empty = licenseLinksArray[1];
+      break;
+    case 'Apache 2.0':
+      empty = licenseLinksArray[2];
+      break;
+    case 'GNU v3':
+      empty = licenseLinksArray[3];
+      break;
+    case 'BSD 3-Clause':
+      empty = licenseLinksArray[4];
+      break;
+    case 'Mozilla Public License 2.0':
+      empty = licenseLinksArray[5];
+      break;
+    default:
+      empty = " ";
+  }
+  return empty;
 }
 
 // TODO: Create a function that returns the license section of README
@@ -59,8 +83,7 @@ const renderLicenseSection = (license) => {
 // TODO: Create a function to generate markdown for README
 const generateMarkdown = (data) => {
  
-  const licenseBadge = renderLicenseBadge(data.license[0]);
- 
+  
 return `# ${data.title}
 <!DOCTYPE html>
 <html lang="en">
@@ -78,7 +101,7 @@ return `# ${data.title}
     <h3>Example heading <span class="badge badge-secondary">Contact Me</span></h3>
     <ul class="list-group">
       <li class="list-group-item">My GitHub username is ${data.email}</li>
-      <li class="list-group-item">LinkedIn: --- ${licenseBadge}-----</li>
+      <li class="list-group-item">LinkedIn: --- ${renderLicenseBadge(data.license[0])}---${renderLicenseLink(data.license[0])}--</li>
     </ul>
   </div>
 </div>
