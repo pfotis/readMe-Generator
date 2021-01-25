@@ -1,50 +1,23 @@
-# README generator
 
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-
-link to repository : https://github.com/pfotis/readMe-Generator
-
-## Description
-
-this is project help the user to create professional readme file for the repository
-
-## Table of Contents
-
-* [Installation](#installation)
-* [Usage](#usage)
-* [License](#license)
-* [Contributing](#contributing)
-* [Tests](#tests)
-* [Questions](#questions)
-
-## Installation
-
-To install dependencies, run the following:
-
-npm install inquirer
+  # readme generator
 
 
-## Usage
+  link to repository : https://github.com/pfotis/readMe-Generator
+  link of the video-demostration :https://drive.google.com/file/d/1W41klD2MLD-vAK8Abcu3CTzQpkCfHNL0/view
+  
+  
+  <iframe src="https://drive.google.com/file/d/1W41klD2MLD-vAK8Abcu3CTzQpkCfHNL0/preview" width="640" 
+  height="480"></iframe>
 
-this is repository is assigment and i use nodejs for coding
 
-## License
+  ## Description
 
-This repository is licensed under the MIT.
-(https://opensource.org/licenses/MIT)
+  this project help the user to create a professional readme file for his/her repository and in the future another user to have access to this repository and they contribute.
 
-## Contributing
+  the folowing image are from the readme file create in the process of the video
 
-the user needs to read the readme file and the comments
 
-## Tests
-
-To run tests, run the following:
-
-node index.js
-
-## Questions
-
-Questions about this repository? Please contact me at pfotis@gmail.com.
-View my work in GitHub pfotis(https://github.com/pfotis).
+<img src="./assets/images/readme/readme1.png" alt="first impress of the readme generator">
+<img src="./assets/images/readme/readme2.png" alt="first impress of the readme generator">
+  
   

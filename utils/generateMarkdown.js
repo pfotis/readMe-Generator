@@ -87,7 +87,6 @@ const generateMarkdown = (data) => {
 
   ${renderLicenseBadge(data.license[0])}
 
-  link to repository : https://github.com/pfotis/readMe-Generator
 
   ## Description
 
@@ -130,7 +129,7 @@ const generateMarkdown = (data) => {
 
   ## Questions
 
-  Questions about this repository? Please contact me at ${data.email}(mailto:${data.email}).
+  Questions about this repository? Please contact me at ${data.email}.
   View my work in GitHub ${data.github}(https://github.com/${data.github}).
   `;
 }
