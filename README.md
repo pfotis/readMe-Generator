@@ -1,4 +1,4 @@
-# ewdfv
+# 
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,12 +10,12 @@
 <body>
   <div class="jumbotron jumbotron-fluid">
   <div class="container">
-    <h1 class="display-4">Hi! My name is sdvf</h1>
-    <p class="lead">I am from .</p>
+    <h1 class="display-4">Hi! My name is </h1>
+    <p class="lead">I am from HTML.</p>
     <h3>Example heading <span class="badge badge-secondary">Contact Me</span></h3>
     <ul class="list-group">
-      <li class="list-group-item">My GitHub username is sdf</li>
-      <li class="list-group-item">LinkedIn: --------</li>
+      <li class="list-group-item">My GitHub username is </li>
+      <li class="list-group-item">LinkedIn: --- [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]-----</li>
     </ul>
   </div>
 </div>
