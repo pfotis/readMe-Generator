@@ -4,10 +4,10 @@
 #### H4
 ##### H5
 ###### H6
-
+* [Installation](#installation)
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
-Alternatively, for H1 and H2, an underline-ish style:
+
 
 Alt-H1
 ======
@@ -54,7 +54,7 @@ Strikethrough uses two tildes. ~~Scratch this.~~
 [You can use numbers for reference-style link definitions][1]
 
 Or leave it empty and use the [link text itself].
-
+## Installation
 URLs and URLs in angle brackets will automatically get turned into links. 
 http://www.example.com or <http://www.example.com> and sometimes 
 example.com (but not on Github, for example).
