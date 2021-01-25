@@ -45,6 +45,6 @@ node index.js
 
 ## Questions
 
-Questions about this repository? Please contact me at pfotis@gmail.com(mailto:pfotis@gmail.com).
+Questions about this repository? Please contact me at pfotis@gmail.com.
 View my work in GitHub pfotis(https://github.com/pfotis).
   
