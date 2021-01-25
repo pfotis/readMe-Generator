@@ -82,55 +82,56 @@ const renderLicenseSection = (license) => {
 const generateMarkdown = (data) => {
  
   
-  return `# ${data.title}
+  return `
+  # ${data.title}
 
-      ${renderLicenseBadge(data.license[0])}
+  ${renderLicenseBadge(data.license[0])}
 
-      link to repository : https://github.com/pfotis/readMe-Generator
+  link to repository : https://github.com/pfotis/readMe-Generator
 
-      ## Description
+  ## Description
 
-      ${data.description}
+  ${data.description}
 
-      ## Table of Contents
+  ## Table of Contents
 
-    * [Installation](#installation)
-    * [Usage](#usage)
-    * [License](#license)
-    * [Contributing](#contributing)
-    * [Tests](#tests)
-    * [Questions](#questions)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [License](#license)
+  * [Contributing](#contributing)
+  * [Tests](#tests)
+  * [Questions](#questions)
 
-    ## Installation
+  ## Installation
 
-    To install dependencies, run the following:
+  To install dependencies, run the following:
 
-    ${data.install}
+  ${data.install}
 
-    
-    ## Usage
+  
+  ## Usage
 
-    ${data.usage}
+  ${data.usage}
 
-    ## License
+  ## License
 
-    This repository is licensed under the ${data.license[0]}.
-    ${renderLicenseLink(data.license[0])}
+  This repository is licensed under the ${data.license[0]}.
+  ${renderLicenseLink(data.license[0])}
 
-    ## Contributing
+  ## Contributing
 
-    ${data.contribute}
+  ${data.contribute}
 
-    ## Tests
+  ## Tests
 
-    To run tests, run the following:
+  To run tests, run the following:
 
-    ${data.test}
+  ${data.test}
 
-    ## Questions
+  ## Questions
 
-    Questions about this repository? Please contact me at ${data.email}(mailto:${data.email}).
-    View my work in GitHub ${data.github}(https://github.com/${data.github}).
+  Questions about this repository? Please contact me at ${data.email}(mailto:${data.email}).
+  View my work in GitHub ${data.github}(https://github.com/${data.github}).
   `;
 }
 
