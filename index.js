@@ -80,7 +80,7 @@ const init = async () => {
     
     const readMeFile = generateMarkDown(answers);
 
-    writeToFile('./output/readMe.md', readMeFile);
+    writeToFile('README.md', readMeFile);
 
     console.log('Successfully wrote to readme.md');
   } catch (err) {
