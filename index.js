@@ -3,17 +3,12 @@ const fs = require('fs');
 const util = require('util');
 const generateMarkDown = require('./utils/generateMarkdown');
 
-
+// this is the object with the question the user could anser and built the readme file
 const question =[
   {
     type: 'input',
     name: 'title',
     message: "What is your project's name?",
-  },
-  {
-    type: 'input',
-    name: 'name',
-    message: 'What is your name?',
   },
   {
     type: 'input',
@@ -23,20 +18,7 @@ const question =[
   {
     type: 'input',
     name: 'github',
-    message: 'What is your github?',
-  },
-  {
-    type: 'checkbox',
-    message: 'What languages do you use?',
-    name: 'stack',
-    choices: [
-        'HTML',
-        'CSS',
-        'JavaScript', 
-        'jQuery',
-        'nodejs',
-        'MySQL',
-        ]
+    message: 'What is your github username?',
   },
   {
     type: 'checkbox',
@@ -53,13 +35,32 @@ const question =[
   },
   {
     type: 'input',
-    name: 'shortDescription',
-    message: 'Please write a short decription of youy project:',
-  }
+    name: 'description',
+    message: 'Please write a decription of your project:',
+  },
+  {
+    type: 'input',
+    name: 'install',
+    message: 'What command should be run to install dependencies?',
+    default: 'npm install inquirer'
+  },
+  {
+    type: 'input',
+    name: 'test',
+    message: 'What command should be run to run for test?',
+    default: 'node index.js'
+  },
+  {
+    type: 'input',
+    name: 'usage',
+    message: 'What does the user need to know about using this repository?'
+  },
+  {
+    type: 'input',
+    name: 'contribute',
+    message: 'What does the user need to know about contributing to this repository?'
+  },
 ];
-
-
-
 
 
 const promptUser = (Q) => {
@@ -74,18 +75,15 @@ const writeToFile = (fileName, data) => {
 const init = async () => {
   try {
     const answers = await promptUser(question);
-    if(answers.stack.length == 0)
-    console.log("why ???");
-
+    
     const readMeFile = generateMarkDown(answers);
 
-    writeToFile('readMe.md', readMeFile);
+    writeToFile('./output/readMe.md', readMeFile);
 
     console.log('Successfully wrote to readme.md');
   } catch (err) {
     console.log(err);
   }
 };
-
 
 init();

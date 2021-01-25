@@ -84,29 +84,56 @@ const renderLicenseSection = (license) => {
 const generateMarkdown = (data) => {
  
   
-return `# ${data.title}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <title>Document</title>
-</head>
-<body>
-  <div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">Hi! My name is ${data.name}</h1>
-    <p class="lead">I am from ${data.stack}.</p>
-    <h3>Example heading <span class="badge badge-secondary">Contact Me</span></h3>
-    <ul class="list-group">
-      <li class="list-group-item">My GitHub username is ${data.email}</li>
-      <li class="list-group-item">LinkedIn: --- ${renderLicenseBadge(data.license[0])}---${renderLicenseLink(data.license[0])}--</li>
-    </ul>
-  </div>
-</div>
-</body>
-</html>`;
+  return `# ${data.title}
+
+      ${renderLicenseBadge(data.license[0])}
+
+      link to repository : https://github.com/pfotis/readMe-Generator
+
+      ## Description
+
+      ${data.description}
+
+      ## Table of Contents
+
+    * [Installation](#installation)
+    * [Usage](#usage)
+    * [License](#license)
+    * [Contributing](#contributing)
+    * [Tests](#tests)
+    * [Questions](#questions)
+
+    ## Installation
+
+    To install dependencies, run the following:
+
+    ${data.install}
+
+    
+    ## Usage
+
+    ${data.usage}
+
+    ## License
+
+    This repository is licensed under the ${data.license[0]}.
+    ${renderLicenseLink(data.license[0])}
+
+    ## Contributing
+
+    ${data.contribute}
+
+    ## Tests
+
+    To run tests, run the following:
+
+    ${data.test}
+
+    ## Questions
+
+    Questions about this repository? Please contact me at ${data.email}(mailto:${data.email}).
+    View my work in GitHub ${data.github}(https://github.com/${data.github}).
+  `;
 }
 
 module.exports =generateMarkdown;
