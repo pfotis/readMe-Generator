@@ -5,6 +5,8 @@
 ##### H5
 ###### H6
 
+
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)(https://opensource.org/licenses/MIT)
 Alternatively, for H1 and H2, an underline-ish style:
 
 Alt-H1
