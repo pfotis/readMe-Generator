@@ -16,8 +16,7 @@ const licenseBadgeArray = [
   "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)]"
 ];
 
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// the following function that returns a license badge based or empty string 
 const renderLicenseBadge = (license) => {
   let empty = "";
   switch(license) {
@@ -45,8 +44,7 @@ const renderLicenseBadge = (license) => {
   return empty;
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// the following function that returns the license link or empty string 
 const renderLicenseLink = (license) => {
   let empty = "";
   switch(license) {
@@ -80,7 +78,7 @@ const renderLicenseSection = (license) => {
   
 }
 
-// TODO: Create a function to generate markdown for README
+// this function called in the index.js file and is the main body of the readme file
 const generateMarkdown = (data) => {
  
   
